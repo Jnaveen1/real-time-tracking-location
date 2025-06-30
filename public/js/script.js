@@ -79,7 +79,7 @@ socket.on("user-disconnected", (id) => {
 });
 
 document.getElementById("share-btn").addEventListener("click", () => {
-    const shareLink = `${window.location.origin}/track/${ROOM_ID}`;
+    const shareLink = `${window.location.origin}/track-naveen-location/${ROOM_ID}`;
 
     // Copy silently using clipboard API
     navigator.clipboard.writeText(shareLink).then(() => {
