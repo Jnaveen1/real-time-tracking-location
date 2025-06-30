@@ -52,7 +52,7 @@ app.get("/", (req, res) => {
   res.redirect(`/track-naveen-location/${Math.random().toString(36).substring(2, 8)}`);
 });
 
-app.get("/track/:roomId", (req, res) => {
+app.get("/track-naveen-location/:roomId", (req, res) => {
   res.render("index", { roomId: req.params.roomId });
 });
 
