@@ -49,7 +49,7 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  res.redirect(`/track/${Math.random().toString(36).substring(2, 8)}`);
+  res.redirect(`/track-naveen-location/${Math.random().toString(36).substring(2, 8)}`);
 });
 
 app.get("/track/:roomId", (req, res) => {
